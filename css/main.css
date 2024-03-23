@@ -1,0 +1,289 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 70vw;
+  background-image: url(../2rabota/img/header.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2vw;
+}
+.header .header__menu1 {
+  word-spacing: 1.6vw;
+  float: left;
+  margin-left: 3vw;
+}
+.header .header__menu1 a {
+  display: inline;
+  font-family: "lato", sans-serif;
+  font-size: 1.4vw;
+  color: black;
+}
+.header .header__menu2 {
+  float: right;
+  list-style: none;
+  word-spacing: 1.6vw;
+  margin-right: 3vw;
+}
+.header .header__menu2 a {
+  display: inline;
+  font-family: "lato", sans-serif;
+  font-size: 1.4vw;
+  color: rgb(0, 0, 0);
+}
+.header .marta {
+  width: 80%;
+  margin-top: 40vw;
+}
+
+.telo .contemporary {
+  font-family: "roboto", sans-serif;
+  font-size: 5vw;
+  margin-left: 3vw;
+}
+.telo .grid1 {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+}
+.telo .photo1 {
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.telo .photo2 {
+  width: 100%;
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+.telo .photo4 {
+  width: 100%;
+  height: 80%;
+  grid-column: 1/3;
+}
+.telo .photo3 {
+  width: 100%;
+  grid-column: 5/5;
+  grid-row: 1/1;
+}
+.telo .photo5 {
+  height: 105%;
+  width: 100%;
+  margin-top: -34%;
+  grid-row: 2/3;
+  grid-column: 5/5;
+}
+.telo p {
+  font-family: "cardo", sans-serif;
+  font-size: 1.5vw;
+}
+.telo .span {
+  margin-left: 3vw;
+  margin-top: -22vw;
+  margin-right: 3vw;
+}
+.telo h2 {
+  font-family: "roboto", sans-serif;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 5vw;
+}
+.telo .aselect {
+  text-align: center;
+  margin-top: 3vw;
+}
+.telo .grid2 {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+}
+.telo .cebenet1 {
+  font-family: "roboto", sans-serif;
+}
+.telo .cebenet2 {
+  font-family: "roboto", sans-serif;
+}
+.telo .cebenet3 {
+  font-family: "roboto", sans-serif;
+}
+.telo .photo6 {
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+.telo .photo7 {
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+.telo .photo8 {
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 3/3;
+}
+.telo .milano {
+  font-family: "roboto", sans-serif;
+}
+.telo .set {
+  font-family: "roboto", sans-serif;
+}
+.telo .raletta {
+  font-family: "roboto", sans-serif;
+}
+.telo .grid3 {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+}
+.telo .photo9 {
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+.telo .photo10 {
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+.telo .photo11 {
+  width: 100%;
+  grid-row: 1/1;
+  grid-column: 3/3;
+}
+.telo .asel {
+  margin-top: -25vh;
+}
+
+.footer img {
+  margin-top: -15vh;
+  margin-left: 9vw;
+  width: 80vw;
+}
+.footer .cook {
+  font-family: "lato", sans-serif;
+  clear: both;
+  display: inline-block;
+  font-size: 1.3vw;
+  margin-right: 2vw;
+}
+.footer .text {
+  text-align: center;
+  margin-top: -15vh;
+}/*# sourceMappingURL=main.css.map */
